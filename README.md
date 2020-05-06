@@ -177,7 +177,7 @@ say wo i ni
 ```
 **19\. 同义词库、反义词库、否定词库：**[guotong1988/chinese_dictionary](https://github.com/guotong1988/chinese_dictionary)
 
-**20\. 无空格英文串分割、抽取单词：**[wordinja](https://github.com/keredson/wordninja)
+**20\. 无空格英文串分割、抽取单词：**[wordninja](https://github.com/keredson/wordninja)
 ```
 >>> import wordninja
 >>> wordninja.split('derekanderson')
@@ -270,7 +270,7 @@ publishTime: 该谣言被举报时间
 本repo项目是一个通过与人对话获得其情感值波动图谱, 内用词库在data文件夹中.
 ```
 
-**34\. 百度中文问答数据集**：[链接](https://pan.baidu.com/s/1QUsKcFWZ7Tg1dk_AbldZ1A) 提取码: 2dva
+**34\. 中文问答数据集**：[链接](https://pan.baidu.com/s/1QUsKcFWZ7Tg1dk_AbldZ1A) 提取码: 2dva
 
 **35\. 句子、QA相似度匹配:MatchZoo**  [github](https://github.com/NTMC-Community/MatchZoo)
 
@@ -300,11 +300,11 @@ publishTime: 该谣言被举报时间
 
 **37. Texar - Toolkit for Text Generation and Beyond**: [github](https://github.com/asyml/texar)
 
-基于Tensorflow的开源工具包，旨在支持广泛的机器学习，特别是文本生成任务，如机器翻译、对话、摘要、内容处置、语言建模等
+- 基于Tensorflow的开源工具包，旨在支持广泛的机器学习，特别是文本生成任务，如机器翻译、对话、摘要、内容处置、语言建模等
 
 **38. 中文事件抽取：** [github](https://github.com/liuhuanyong/ComplexEventExtraction)
 
-中文复合事件抽取，包括条件事件、因果事件、顺承事件、反转事件等事件抽取，并形成事理图谱。
+- 中文复合事件抽取，包括条件事件、因果事件、顺承事件、反转事件等事件抽取，并形成事理图谱。
 
 **39\. cocoNLP:** [github](https://github.com/fighting41love/cocoNLP)
 
@@ -860,10 +860,10 @@ for word in misspelled:
 
 **194\. 自然语言生成资源大全** [github](https://github.com/tokenmill/awesome-nlg)
 - 内含英文数据、论文、代码
-- 
+  
 **195\. 中日韩分词库mecab的Python接口库** [github](https://github.com/jeongukjae/python-mecab)
 
-**196\. 中文文本摘要/关键词提取** [github](中文文本摘要/关键词提取)
+**196\. 中文文本摘要/关键词提取** [github](https://github.com/letiantian/TextRank4ZH)
 
 **197\. 汉字字符特征提取器 (featurizer)，提取汉字的特征（发音特征、字形特征）用做深度学习的特征** [github](https://github.com/howl-anderson/hanzi_char_featurizer)
 
@@ -1017,8 +1017,56 @@ for word in misspelled:
 
 **270\. Haystack：灵活、强大的可扩展问答(QA)框架** [github](https://github.com/deepset-ai/haystack)
 
-
 **271\. 中文关键短语抽取工具** [github](https://github.com/dongrixinyu/chinese_keyphrase_extractor)
 
+**272\. pdf文档解析相关工具包**
+- pdf生成
+  - [fdfgen](https://github.com/ccnmtl/fdfgen): 能够自动创建pdf文档，并填写信息
+- pdf表格解析
+  - [pdftabextract](https://github.com/WZBSocialScienceCenter/pdftabextract): 用于OCR识别后的表格信息解析，很强大
+  - [tabula-py](https://github.com/chezou/tabula-py): 直接将pdf中的表格信息转换为pandas的dataframe，有java和python两种版本代码
+  - [pdfx](https://github.com/metachris/pdfx): 自动抽取出引用参考文献，并下载对应的pdf文件
+  - [invoice2data](https://github.com/invoice-x/invoice2data): 发票pdf信息抽取
+  - [camelot](https://github.com/atlanhq/camelot): pdf表格解析
+  - [pdfplumber](https://github.com/jsvine/pdfplumber): pdf表格解析
+- pdf语义分割
+  - [PubLayNet](https://go.ctolib.com/ibm-aur-nlp-PubLayNet.html):能够划分段落、识别表格、图片
+- pdf读取工具
+  - [PDFMiner](https://github.com/euske/pdfminer)：PDFMiner能获取页面中文本的准确位置，以及字体或行等其他信息。它还有一个PDF转换器，可以将PDF文件转换成其他文本格式(如HTML)。还有一个可扩展的解析器PDF，可以用于文本分析以外的其他用途。
+  - [PyPDF2](https://github.com/mstamy2/PyPDF2)：PyPDF 2是一个python PDF库，能够分割、合并、裁剪和转换PDF文件的页面。它还可以向PDF文件中添加自定义数据、查看选项和密码。它可以从PDF检索文本和元数据，还可以将整个文件合并在一起。
+  - [ReportLab](https://www.reportlab.com/opensource/)：ReportLab能快速创建PDF 文档。经过时间证明的、超好用的开源项目，用于创建复杂的、数据驱动的PDF文档和自定义矢量图形。它是免费的，开源的，用Python编写的。该软件包每月下载5万多次，是标准Linux发行版的一部分，嵌入到许多产品中，并被选中为Wikipedia的打印/导出功能提供动力。
+  
+**273\. 中文词语相似度计算方法** [gihtub](https://github.com/yaleimeng/Final_word_Similarity)
+- 综合了同义词词林扩展版与知网（Hownet）的词语相似度计算方法，词汇覆盖更多、结果更准确。
 
+**274\. 人民日报语料库处理工具集** [github](https://github.com/howl-anderson/tools_for_corpus_of_people_daily)
 
+**275\. stanza:斯坦福团队NLP工具** [github](https://github.com/stanfordnlp/stanza)
+  - 可处理六十多种语言
+
+**276\. 一个大规模医疗对话数据集** [github](https://github.com/UCSD-AI4H/Medical-Dialogue-System)
+- 包含110万医学咨询，400万条医患对话
+
+**277\. 新冠肺炎相关数据** 
+- 新冠及其他类型肺炎中文医疗对话数据集 [github](https://github.com/UCSD-AI4H/COVID-Dialogue)
+- 清华大学等机构的开放数据源（COVID-19）[github](https://www.aminer.cn/data-covid19/)
+
+**278\. DGL-KE 图嵌入表示学习算法** [github](https://github.com/awslabs/dgl-ke)
+
+**279\. nlp-recipes：微软出品--自然语言处理最佳实践和范例** [github](https://github.com/microsoft/nlp-recipes)
+
+**280\. chinese_keyphrase_extractor (CKPE) - A tool for chinese keyphrase extraction 一个快速从自然语言文本中提取和识别关键短语的工具** [github](https://github.com/dongrixinyu/chinese_keyphrase_extractor)
+
+**281\. 使用GAN生成表格数据（仅支持英文）** [github](https://github.com/Diyago/GAN-for-tabular-data)
+
+**282\. Google发布Taskmaster-2自然语言任务对话数据集** [github](https://github.com/google-research-datasets/Taskmaster/tree/master/TM-2-2020)
+ 
+**283\. BDCI2019金融负面信息判定** [github](https://github.com/A-Rain/BDCI2019-Negative_Finance_Info_Judge)
+
+**284\. 用神经网络符号推理求解复杂数学方程** [github](https://ai.facebook.com/blog/using-neural-networks-to-solve-advanced-mathematics-equations/)
+
+**285\. 粤语/英语会话双语语料库** [github](https://github.com/khiajohnson/SpiCE-Corpus)
+
+**286\. 中文ELECTRA预训练模型** [github](https://github.com/ymcui/Chinese-ELECTRA)
+
+**287\. 面向深度学习研究人员的自然语言处理实例教程** [github](https://github.com/graykode/nlp-tutorial)
